@@ -6,11 +6,11 @@ id_pattern = re.compile(r'^.\d+$')
 # bot
 API_ID = int(environ.get('API_ID', '13963336'))
 API_HASH = environ.get('API_HASH', 'a144d1e22ef0b29738e8c00713d02678')
-BOT_TOKEN = environ.get('BOT_TOKEN', '7792954183:AAFn0Z33a_FobtcxBRrTpfibd6Ax6Ok11ck')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7792954183:AAG2iAzbujKwErlkuUSqtYmvx8ktUZoKH44')
 ADMINS = [int(admins) if id_pattern.search(admins) else admins for admins in environ.get('ADMINS', '1867106198').split()]
 
 # bs
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '1867106198'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002421238378'))
 fsub_eid = environ.get('FSUB_ID')
 FSUB_ID = int(fsub_eid) if fsub_eid and id_pattern.search(fsub_eid) else None
 
